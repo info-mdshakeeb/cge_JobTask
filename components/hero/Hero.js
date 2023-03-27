@@ -23,13 +23,13 @@ function Hero() {
                     </div>
                     <div className="w-1/2 relative bg-opacity-10  mt-[31px]">
                         <div className="">
-                            <Image src={HeroImg6} height={686} width={686} alt="Hero Image"
+                            <Image className="w-auto h-auto" src={HeroImg6} height={686} width={686} alt="HeroImage"
                             ></Image>
-                            <Image className="absolute top-12 left-12 " src={HeroImg5} height={586} width={586} alt="Hero Image"
+                            <Image className="absolute top-12 left-12 " src={HeroImg5} height={586} width={586} alt="Hero Image2"
                             ></Image>
-                            <Image className="absolute top-24 left-24 " src={HeroImg4} height={486} width={486} alt="Hero Image"
+                            <Image className="absolute top-24 left-24 " src={HeroImg4} height={486} width={486} alt="Hero Image3"
                             ></Image>
-                            <Image className="absolute top-[10px] left-[-25px] " src={frame} height={334} width={589} alt="Hero Image"
+                            <Image className="absolute top-[10px] left-[-25px] " src={frame} height={334} width={589} alt="Hero Image4"
                             ></Image>
                         </div>
                     </div>

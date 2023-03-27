@@ -13,15 +13,15 @@ function navbar() {
                 <div className="mx-60">
                     <div className="  text-white flex gap-[30px] text-[15px]">
                         <div className="flex gap-2">
-                            <Image className=" w-[21px] " src={vector} alt="" />
+                            <Image className=" w-[21px] " src={vector} alt="phone" />
                             +86-13530796464
                         </div>
                         <div className="flex gap-2">
-                            <Image className=" w-[21px]" src={vector} alt="" />
+                            <Image className=" w-[21px]" src={vector} alt="phone" />
                             +1-806-305-3242
                         </div>
                         <div className="flex gap-2">
-                            <Image className=" w-[21px]" src={stoke} alt="" />
+                            <Image className=" w-[21px]" src={stoke} alt="ere" />
                             deficoincapital@gmail.com
                         </div>
                     </div>
@@ -62,11 +62,11 @@ function navbar() {
                                 <li><a>Contact Us</a></li>
                                 <div className="flex justify-center items-center gap-[15px]">
                                     <div className="flex gap-1">
-                                        <Image src={flag} height={13} width={18}></Image>
+                                        <Image src={flag} height={13} width={18} alt="image"></Image>
                                         <p>US</p>
                                     </div>
-                                    <Image src={search}></Image>
-                                    <Image src={cart}></Image>
+                                    <Image src={search} alt="image"></Image>
+                                    <Image src={cart} alt="images"></Image>
                                     <p className="btn btn-sm border-2 lowercase">login</p>
                                     <p className="btn btn-sm btn-warning lowercase">SignUp</p>
                                 </div>
