@@ -56,7 +56,7 @@ function Brand() {
             />
             <div className="flex items-center gap-8">
                 <div className="border border-black rounded-full h-16 w-16 flex items-center justify-center">
-                    <Image src={rightArrow} height={21} width={11} alt="image" />
+                    <Image src={rightArrow} className="h-[21px] w-[11px]" alt="image" />
                 </div>
                 <div className="grid grid-cols-6 gap-[15px]">
                     {cardData.map((item, index) => (
@@ -69,11 +69,12 @@ function Brand() {
                     )}
                 </div>
                 <div className="border border-black rounded-full h-16 w-16 flex items-center justify-center">
-                    <Image src={leftArrow} height={21} width={11} alt="image" />
+                    <Image className="h-[21px] w-[11px]" src={leftArrow} alt="image" />
                 </div>
             </div>
             <div className="grid grid-cols-4 mt-[50px] mb-[57px] ">
                 <div className="h-[387px] w-[297px] bg-[#F4F8FB]">
+
                 </div>
             </div>
             <div className=" flex  justify-center">

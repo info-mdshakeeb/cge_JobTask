@@ -62,7 +62,7 @@ function navbar() {
                                 <li><a>Contact Us</a></li>
                                 <div className="flex justify-center items-center gap-[15px]">
                                     <div className="flex gap-1">
-                                        <Image src={flag} height={13} width={18} alt="image"></Image>
+                                        <Image className="h-[13px] w-[18px]" src={flag} alt="image"></Image>
                                         <p>US</p>
                                     </div>
                                     <Image src={search} alt="image"></Image>
