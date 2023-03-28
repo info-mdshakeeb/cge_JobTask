@@ -109,20 +109,17 @@ function Brand() {
                     <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : undefined}  h-[392px] w-[302px] p-[2px] rounded-[21px]`} key={i}>
                         <div className="bg-[#F4F8FB] rounded-[21px]  h-[387px] w-[297px] p-[2px]" >
                             <div className="mx-[19px]">
-                                <Image src={data.img} className="mt-[24px]  " alt="image" />
+                                <Image src={data.img} className="mt-[24px]" alt="image" />
                                 <p className="mt-3">
                                     Bitmain Antminer D9 1.77Th/s Dash Miner
                                 </p>
-                                <button className={`w-[260px] border border-[#FFD33F] h-[44px] rounded-[100px] mt-[10px] ${data?.active ? "bg-[#FFD33F]" : undefined}`}>
+                                <button className={`w-[260px] border-2 border-[#FFD33F] h-[44px] rounded-[100px] mt-[10px] ${data?.active ? "bg-[#FFD33F]" : undefined}`}>
                                     <span className=" lowercase w-[137px] ">{data?.price}</span>
                                 </button>
                             </div>
                         </div>
-
                     </div>
-                )
-                }
-
+                )}
             </div>
             <div className=" flex  justify-center">
                 <Button
