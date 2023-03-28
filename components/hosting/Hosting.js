@@ -5,7 +5,7 @@ import Title from "../title/Title";
 const Hosting = () => {
     return (
         <section className="min-h-[895px] bg-[#F4F8FB]">
-            <div className="mx-60">
+            <div className="2xl:mx-60 md:mx-10 mx-4">
                 <Title
                     data="HOSTING PARTNER"
                     mt={"pt-[90px]"}

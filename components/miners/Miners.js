@@ -38,7 +38,7 @@ const brandData = [
 function Miners() {
     return (
         <section className="min-h-[820px] bg-[#F4F8FB]">
-            <div className="mx-60">
+            <div className="2xl:mx-60 md:mx-10 mx-4">
                 <div className="">
                     <Title
                         data="MORE PROFITABLE MINERS"
@@ -51,7 +51,7 @@ function Miners() {
                         <div className="border border-black rounded-full h-16 w-16 flex items-center justify-center">
                             <Image src={rightArrow} className="h-[21px] w-[11px]" alt="image" />
                         </div>
-                        <div className="grid grid-cols-4 mt-[50px] mb-[57px] gap-[17px]  ">
+                        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 mt-[50px] mb-[57px] gap-[17px]  ">
                             {brandData.map((data, i) =>
                                 <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : "border"}  h-[392px] w-[302px] p-[2px] rounded-[21px]`} key={i}>
                                     <div className="bg-white rounded-[21px]  h-[387px] w-[297px] p-[2px]" >

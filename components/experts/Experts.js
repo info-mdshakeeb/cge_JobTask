@@ -6,7 +6,7 @@ import image47 from '../../public/Img/expertsImg/image47.png';
 
 const Experts = () => {
     return (
-        <section className="mx-60 mt-[130px] mb-[92px]">
+        <section className="2xl:mx-60 md:mx-10 mx-4 mt-[130px] mb-[92px]">
             <div className=" flex">
                 <div className="w-1/2">
                     <div className="w-[543px]">

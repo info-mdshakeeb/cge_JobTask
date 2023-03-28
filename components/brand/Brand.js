@@ -1,4 +1,6 @@
 import Image from "next/image";
+import "swiper/css";
+import "swiper/css/pagination";
 import image1 from "../../public/Img/BrandImage/1.png";
 import Ipollo from "../../public/Img/BrandImage/image31.png";
 import rightArrow from "../../public/Img/heroImage/Icon/vector-1.svg";
@@ -9,6 +11,8 @@ import image38 from "../../public/Img/heroImage/image38.png";
 import image39 from "../../public/Img/heroImage/image39.png";
 import Button from "../button/Button";
 import Title from "../title/Title";
+
+
 
 const productData = [
     {
@@ -80,7 +84,7 @@ const brandData = [
 
 function Brand() {
     return (
-        <div className=" mx-60 mb-[76px]">
+        <div className=" 2xl:mx-60 md:mx-10 mx-4 mb-[76px]">
             <Title
                 data={"SHOP BY BRAND"}
                 mt={"mt-[70px]"}
@@ -92,9 +96,10 @@ function Brand() {
                 </div>
                 <div className="grid grid-cols-6 gap-[15px]">
                     {productData.map((item, index) => (
-                        <div key={index} className="bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
-                            <div className={`w-[190px] h-[217px] ${item?.active ? "bg-[#FFD33F]" : "bg-white"} rounded-[21px] border mx-auto `}>
-                                <Image src={item?.img} height={item?.imageDetails?.height} width={item?.imageDetails?.width} className={`${item.active ? "pt-[29px] pl-[11px]" : "mt-[29px] ml-[40px]"} `} alt={item?.title} />
+                        <div key={index} className="2xl:w-[193px] 2xl:h-[220px] bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
+                            <div className={`2xl:w-[190px] 2xl:h-[217px] ${item?.active ? "bg-[#FFD33F]" : "bg-white"} rounded-[21px] border mx-auto `}>
+                                <Image src={item?.img}
+                                    className={`${item.active ? "pt-[29px] pl-[11px]" : "mt-[29px] ml-[40px]"} `} alt={item?.title} />
                                 <p className={`${item.active ? "text-white" : undefined} text-center mt-[7px]`}>{item?.title}</p>
                             </div>
                         </div>)
@@ -104,10 +109,10 @@ function Brand() {
                     <Image className="h-[21px] w-[11px]" src={leftArrow} alt="image" />
                 </div>
             </div>
-            <div className="grid grid-cols-4 mt-[50px] mb-[57px] gap-[17px]  mx-[95px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 xl:grid-cols-4 mt-[50px] mb-[57px] 2xl:gap-[17px]  2xl:mx-[95px]">
                 {brandData.map((data, i) =>
-                    <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : undefined}  h-[392px] w-[302px] p-[2px] rounded-[21px]`} key={i}>
-                        <div className="bg-[#F4F8FB] rounded-[21px]  h-[387px] w-[297px] p-[2px]" >
+                    <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : undefined}  h-[392px] w-[302px] mx-auto p-[2px] rounded-[21px] `} key={i}>
+                        <div className="bg-[#F4F8FB] rounded-[21px] mx-auto  h-[387px] w-[297px] p-[2px]" >
                             <div className="mx-[19px]">
                                 <Image src={data.img} className="mt-[24px]" alt="image" />
                                 <p className="mt-3">
