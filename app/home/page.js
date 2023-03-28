@@ -1,4 +1,5 @@
 import Brand from "@/components/brand/Brand";
+import SellerBrand from "@/components/brand/sellerBrand/SellerBrand";
 import Experts from "@/components/experts/Experts";
 import Hero from "@/components/hero/Hero";
 import Hosting from "@/components/hosting/Hosting";
@@ -12,6 +13,7 @@ function HomePage() {
             <Miners />
             <Experts />
             <Hosting />
+            <SellerBrand />
         </div>
     );
 }
