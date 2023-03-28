@@ -29,7 +29,7 @@ function Hero() {
                             ></Image>
                             <Image className="absolute top-24 left-24  h-[486px] w-[486px]" src={HeroImg4} alt="Hero Image3"
                             ></Image>
-                            <Image className="absolute top-[10px] left-[-25px]  h-[334px] w-[589px]" src={frame} alt="Hero Image4"
+                            <Image className="absolute top-[10px] left-[-25px] " src={frame} height={334} width={589} alt="Hero Image4"
                             ></Image>
                         </div>
                     </div>
