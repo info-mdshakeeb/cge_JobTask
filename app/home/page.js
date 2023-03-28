@@ -1,4 +1,5 @@
 import Brand from "@/components/brand/Brand";
+import Experts from "@/components/experts/Experts";
 import Hero from "@/components/hero/Hero";
 import Miners from "@/components/miners/Miners";
 
@@ -8,6 +9,7 @@ function HomePage() {
             <Hero />
             <Brand />
             <Miners />
+            <Experts />
         </div>
     );
 }
