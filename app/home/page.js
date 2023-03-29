@@ -1,3 +1,4 @@
+import Blog from "@/components/blog/Blog";
 import Brand from "@/components/brand/Brand";
 import SellerBrand from "@/components/brand/sellerBrand/SellerBrand";
 import Contact from "@/components/contact/Contact";
@@ -16,6 +17,7 @@ function HomePage() {
             <Hosting />
             <SellerBrand />
             <Contact />
+            <Blog />
         </div>
     );
 }
