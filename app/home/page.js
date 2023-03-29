@@ -1,5 +1,6 @@
 import Brand from "@/components/brand/Brand";
 import SellerBrand from "@/components/brand/sellerBrand/SellerBrand";
+import Contact from "@/components/contact/Contact";
 import Experts from "@/components/experts/Experts";
 import Hero from "@/components/hero/Hero";
 import Hosting from "@/components/hosting/Hosting";
@@ -14,6 +15,7 @@ function HomePage() {
             <Experts />
             <Hosting />
             <SellerBrand />
+            <Contact />
         </div>
     );
 }

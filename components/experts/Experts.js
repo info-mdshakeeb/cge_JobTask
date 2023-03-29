@@ -7,13 +7,13 @@ import image47 from '../../public/Img/expertsImg/image47.png';
 const Experts = () => {
     return (
         <section className="2xl:mx-60 md:mx-10 mx-4 mt-[130px] mb-[92px]">
-            <div className=" flex">
-                <div className="w-1/2">
+            <div className=" lg:flex">
+                <div className="lg:w-1/2">
                     <div className="w-[543px]">
                         <p className="font-bold text-[64px] leading-[78px]">Built by <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD33F] to-[#F45D02]">experts</span> and backed by investors</p>
                     </div>
                 </div>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <div className="grid  grid-cols-2  gap-[50px]">
                         <Image className="" src={image44} alt="image" />
                         <Image className="" src={image45} alt="image" />

@@ -1,6 +1,8 @@
+'use client';
 import Image from "next/image";
-import "swiper/css";
-import "swiper/css/pagination";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import image1 from "../../public/Img/BrandImage/1.png";
 import Ipollo from "../../public/Img/BrandImage/image31.png";
 import rightArrow from "../../public/Img/heroImage/Icon/vector-1.svg";
@@ -11,6 +13,7 @@ import image38 from "../../public/Img/heroImage/image38.png";
 import image39 from "../../public/Img/heroImage/image39.png";
 import Button from "../button/Button";
 import Title from "../title/Title";
+import "./style.css";
 
 
 
@@ -51,6 +54,18 @@ const productData = [
         title: "Innosilicon",
         active: false,
     },
+    {
+        img: Ipollo,
+        imageDetails: { width: 107, height: 137 },
+        title: "Innosilicon",
+        active: false,
+    },
+    {
+        img: Ipollo,
+        imageDetails: { width: 107, height: 137 },
+        title: "Innosilicon",
+        active: false,
+    },
 
 ];
 const brandData = [
@@ -83,6 +98,62 @@ const brandData = [
 ]
 
 function Brand() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        nextArrow: <Image src={leftArrow} className=" " alt="image" />,
+        prevArrow: <Image src={rightArrow} className="" alt="image" />,
+        responsive: [
+            {
+                breakpoint: 1536,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
+
     return (
         <div className=" 2xl:mx-60 md:mx-10 mx-4 mb-[76px]">
             <Title
@@ -90,26 +161,22 @@ function Brand() {
                 mt={"mt-[70px]"}
                 mb={"pb-[50px]"}
             />
-            <div className="flex items-center gap-8">
-                <div className="border border-black rounded-full h-16 w-16 flex items-center justify-center">
-                    <Image src={rightArrow} className="h-[21px] w-[11px]" alt="image" />
-                </div>
-                <div className="grid grid-cols-6 gap-[15px]">
-                    {productData.map((item, index) => (
-                        <div key={index} className="2xl:w-[193px] 2xl:h-[220px] bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
-                            <div className={`2xl:w-[190px] 2xl:h-[217px] ${item?.active ? "bg-[#FFD33F]" : "bg-white"} rounded-[21px] border mx-auto `}>
-                                <Image src={item?.img}
-                                    className={`${item.active ? "pt-[29px] pl-[11px]" : "mt-[29px] ml-[40px]"} `} alt={item?.title} />
-                                <p className={`${item.active ? "text-white" : undefined} text-center mt-[7px]`}>{item?.title}</p>
-                            </div>
-                        </div>)
-                    )}
-                </div>
-                <div className="border border-black rounded-full h-16 w-16 flex items-center justify-center">
-                    <Image className="h-[21px] w-[11px]" src={leftArrow} alt="image" />
+            <div className="">
+                <div className="w-[97%] mx-auto">
+                    <Slider {...settings}>
+                        {productData.map((item, index) => (
+                            <div key={index} className="max-w-[193px] max-h-[220px] bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
+                                <div className={`:w-[190px] h-[217px] ${item?.active ? "bg-[#FFD33F]" : "bg-white"} rounded-[21px] border mx-auto `}>
+                                    <Image src={item?.img}
+                                        className={`${item.active ? "pt-[29px] pl-[11px]" : "mt-[29px] ml-[40px]"} `} alt={item?.title} />
+                                    <p className={`${item.active ? "text-white" : undefined} text-center mt-[7px]`}>{item?.title}</p>
+                                </div>
+                            </div>)
+                        )}
+                    </Slider>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 xl:grid-cols-4 mt-[50px] mb-[57px] 2xl:gap-[17px]  2xl:mx-[95px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 xl:grid-cols-4 mt-[50px] mb-[57px] 2xl:gap-[17px] ">
                 {brandData.map((data, i) =>
                     <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : undefined}  h-[392px] w-[302px] mx-auto p-[2px] rounded-[21px] `} key={i}>
                         <div className="bg-[#F4F8FB] rounded-[21px] mx-auto  h-[387px] w-[297px] p-[2px]" >
