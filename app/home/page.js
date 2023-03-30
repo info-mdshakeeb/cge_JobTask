@@ -10,7 +10,7 @@ import Miners from "@/components/miners/Miners";
 
 function HomePage() {
     return (
-        <div>
+        <div className="overflow-hidden">
             <Hero />
             <Brand />
             <Miners />

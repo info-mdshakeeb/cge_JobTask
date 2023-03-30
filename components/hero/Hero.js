@@ -8,11 +8,11 @@ import Button from "../button/Button";
 function Hero() {
     return (
         <>
-            <section className="min-h-[845px] bg-[#F4F8FB]  shadow-sm">
+            <section className="min-h-[845px] bg-[#F4F8FB]  shadow-sm border-b">
                 <div className="2xl:mx-60 md:mx-10 mx-4 md:flex">
                     <div className="md:w-1/2">
                         <div className="xl:h-[326px] pt-3 xl:pt-[135px] text-[#102542]">
-                            <p className=" font-bold text-7xl xl:text-[100px] leading-[118px]">Start<span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD33F] to-[#F45D02]">Mining</span> Today!</p>
+                            <p className=" font-bold text-6xl xl:text-[100px] leading-[118px]">Start<span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD33F] to-[#F45D02]">Mining</span> Today!</p>
                         </div>
                         <div className="md:h-[109px] w-[571px] font-[20px] leading-[29px] text-[#102542] lg:mt-20">
                             <p className="">  Operated by a team of professionals with an experience <br /> into Blockchain Management, E-Commerce and <br /> Cryptocurrency Mining.</p>

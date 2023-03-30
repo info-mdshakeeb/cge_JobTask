@@ -12,15 +12,15 @@ function navbar() {
             <section className="w-full bg-[#102542] h-[66px]  flex-col justify-center hidden md:flex ">
                 <div className="2xl:mx-60 md:mx-10 mx-4 ">
                     <div className="  text-white flex gap-[30px] text-[15px]">
-                        <div className="flex gap-2">
+                        <div className="flex gap-2  link link-hover ">
                             <Image className=" w-[21px] " src={vector} alt="phone" />
                             +86-13530796464
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 link link-hover ">
                             <Image className=" w-[21px]" src={vector} alt="phone" />
                             +1-806-305-3242
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 link link-hover ">
                             <Image className=" w-[21px]" src={stoke} alt="ere" />
                             deficoincapital@gmail.com
                         </div>
@@ -28,7 +28,7 @@ function navbar() {
                 </div>
             </section>
             <section className="h-24 shadow-md flex flex-col justify-center">
-                <div className="2xl:mx-60 md:mx-10 mx-4 ">
+                <div className="2xl:mx-60 md:mx-10 mx-4">
                     <div className="navbar">
                         <div className="navbar-start">
                             <div className="dropdown">
@@ -44,8 +44,8 @@ function navbar() {
                                     <li><a>Contact Us</a></li>
                                 </ul>
                             </div>
-                            <div className="">
-                                <p className="2xl:text-[38px] text-xl xl:text-2xl font-bold text-[#102542]  w-60 xl:w-full   "><span className="text-[#F45D02]">CRYPTO</span> GURU DEALS</p>
+                            <div className=" cursor-pointer">
+                                <p className="2xl:text-[38px] text-xl xl:text-2xl font-bold text-[#102542]  w-60 xl:w-full  "><span className="text-[#F45D02]">CRYPTO</span> GURU DEALS</p>
                             </div>
                         </div>
                         <div className="navbar-center hidden lg:flex">
@@ -57,12 +57,12 @@ function navbar() {
                                 <li><a>Blog</a></li>
                                 <li><a>Contact Us</a></li>
                                 <div className="flex justify-center items-center  gap-2 2xl:gap-[15px]">
-                                    <div className="flex gap-1">
+                                    <div className="flex gap-1 cursor-pointer">
                                         <Image className="h-[13px] w-[18px]" src={flag} alt="image"></Image>
                                         <p>US</p>
                                     </div>
-                                    <Image src={search} alt="image"></Image>
-                                    <Image src={cart} alt="images"></Image>
+                                    <Image src={search} className="cursor-pointer" alt="image"></Image>
+                                    <Image className="cursor-pointer" src={cart} alt="images"></Image>
                                     <p className="btn btn-sm border-2 lowercase">login</p>
                                     <p className="btn btn-sm btn-warning lowercase">SignUp</p>
                                 </div>

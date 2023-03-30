@@ -17,7 +17,7 @@ const brandData = [
     {
         img: image36,
         title: "Bitmain Antminer D9 1.77Th/s Dash Miner",
-        price: "View Product",
+        price: "$ 4.0000.00",
         active: true,
     },
     {
@@ -75,7 +75,7 @@ function Miners() {
             {
                 breakpoint: 1280,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
@@ -84,7 +84,7 @@ function Miners() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
@@ -101,14 +101,15 @@ function Miners() {
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             }
         ]
     };
     return (
-        <section className="min-h-[820px] bg-[#F4F8FB]">
+        <section className="min-h-[820px] bg-[#F4F8FB] ">
             <div className="2xl:mx-60 md:mx-10 mx-4">
                 <div className="">
                     <Title
@@ -119,17 +120,17 @@ function Miners() {
                 </div>
                 <div className="">
                     <div className="">
-                        <div className="w-full">
+                        <div className="w-full px-3">
                             <Slider {...settings}>
                                 {brandData.map((data, i) =>
-                                    <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : "border"}  max-h-[392px] max-w-[302px] p-[2px] rounded-[21px]`} key={i}>
-                                        <div className="bg-white rounded-[21px]  h-[387px] w-[297px] p-[2px]" >
+                                    <div className="" key={i}>
+                                        <div className={`  border-2 cursor-pointer hover:border-[#FFD33F] bg-white rounded-[21px] mx-auto  xl:h-[387px] xl:w-[297px]  `}  >
                                             <div className="mx-[19px]">
-                                                <Image src={data.img} className="mt-[24px]" alt="image" />
+                                                <Image src={data.img} className="mt-[24px] xl:h-[234px] w-full" alt="image" />
                                                 <p className="mt-3">
                                                     Bitmain Antminer D9 1.77Th/s Dash Miner
                                                 </p>
-                                                <button className={`w-[260px]  border-[#FFD33F] border-2 h-[44px] rounded-[100px] mt-[10px] ${data?.active ? "bg-[#FFD33F]" : undefined}`}>
+                                                <button className={`w-full xl:w-[260px] border-2 border-[#FFD33F] h-[44px] rounded-[100px] mt-[10px] mb-3 xl:mb-0 hover:bg-[#FFD33F]`}>
                                                     <span className=" lowercase w-[137px] ">{data?.price}</span>
                                                 </button>
                                             </div>

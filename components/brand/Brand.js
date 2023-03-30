@@ -72,7 +72,7 @@ const brandData = [
     {
         img: image36,
         title: "Bitmain Antminer D9 1.77Th/s Dash Miner",
-        price: "View Product",
+        price: "$ 4.0000.00",
         active: true,
 
     },
@@ -155,37 +155,37 @@ function Brand() {
 
 
     return (
-        <div className=" 2xl:mx-60 md:mx-10 mx-4 mb-[76px]">
+        <div className=" 2xl:mx-60 md:mx-10 mx-4 mb-[76px] ">
             <Title
                 data={"SHOP BY BRAND"}
                 mt={"mt-[70px]"}
                 mb={"pb-[50px]"}
             />
             <div className="">
-                <div className="w-[97%] mx-auto">
+                <div className="w-full px-3">
                     <Slider {...settings}>
                         {productData.map((item, index) => (
-                            <div key={index} className="max-w-[193px] max-h-[220px] bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
-                                <div className={`:w-[190px] h-[217px] ${item?.active ? "bg-[#FFD33F]" : "bg-white"} rounded-[21px] border mx-auto `}>
+                            <div key={index} className="max-w-[193px] max-h-[220px] cursor-pointer bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]  p-[2px] rounded-[21px]">
+                                <div className={`:w-[190px] h-[217px] bg-white hover:text-white  hover:bg-[#FFD33F] rounded-[21px] border mx-auto `}>
                                     <Image src={item?.img}
                                         className={`${item.active ? "pt-[29px] pl-[11px]" : "mt-[29px] ml-[40px]"} `} alt={item?.title} />
-                                    <p className={`${item.active ? "text-white" : undefined} text-center mt-[7px]`}>{item?.title}</p>
+                                    <p className={` text-center mt-[7px]`}>{item?.title}</p>
                                 </div>
                             </div>)
                         )}
                     </Slider>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 xl:grid-cols-4 mt-[50px] mb-[57px] 2xl:gap-[17px] ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:grid-cols-4 mt-[50px] mb-[57px] 2xl:gap-[17px] ">
                 {brandData.map((data, i) =>
-                    <div className={`${data?.active ? "bg-gradient-to-tr from-[#F45D02] to-[#FFD33F]" : undefined}  h-[392px] w-[302px] mx-auto p-[2px] rounded-[21px] `} key={i}>
-                        <div className="bg-[#F4F8FB] rounded-[21px] mx-auto  h-[387px] w-[297px] p-[2px]" >
+                    <div className={` hover:bg-gradient-to-tr cursor-pointer from-[#F45D02] to-[#FFD33F]"  xl:h-[392px] xl:w-[302px] w-full p-[2px] rounded-[21px] `} key={i}>
+                        <div className="bg-[#F4F8FB] rounded-[21px] mx-auto  xl:h-[387px] xl:w-[297px] p-[2px]" >
                             <div className="mx-[19px]">
-                                <Image src={data.img} className="mt-[24px]" alt="image" />
+                                <Image src={data.img} className="mt-[24px] xl:h-[234px] w-full" alt="image" />
                                 <p className="mt-3">
                                     Bitmain Antminer D9 1.77Th/s Dash Miner
                                 </p>
-                                <button className={`w-[260px] border-2 border-[#FFD33F] h-[44px] rounded-[100px] mt-[10px] ${data?.active ? "bg-[#FFD33F]" : undefined}`}>
+                                <button className={`w-full xl:w-[260px] border-2 border-[#FFD33F] h-[44px] rounded-[100px] mt-[10px] mb-3 xl:mb-0 hover:bg-[#FFD33F]`}>
                                     <span className=" lowercase w-[137px] ">{data?.price}</span>
                                 </button>
                             </div>
