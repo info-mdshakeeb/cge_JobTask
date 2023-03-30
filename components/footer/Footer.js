@@ -70,9 +70,6 @@ const Footer = () => {
                     </footer>
                 </div>
             </div>
-
-
-
         </section>
     );
 };
